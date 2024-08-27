@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie | Food Delivery in Bangladesh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style(min).css" />
+    <link rel="stylesheet" href="responsive(min).css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body class="cFlex">
+    <header>
+      <div class="logo">
+        <a href="./"><img src="./assets/header/headerLogo.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cart</a></li>
+      </nav>
+      <div class="search-cart">
+        <label for="headerSrc"
+          ><img id="headerSearch" src="./assets/header/search.png" alt="search"
+        /></label>
+        <input
+          type="text"
+          id="headerSrc"
+          name="headerSrc"
+          placeholder="Search"
+        />
+        <div id="itemsAddedToCart">2</div>
+        <img id="headerCart" src="./assets/header/cart.png" alt="cart" />
+      </div>
+    </header>
+
+    <main class="cFlex">
+      <section class="hero">
+        <div class="heroLeft">
+          <div class="bike">
+            <p>Bike Delivery</p>
+            <img src="./assets/hero/bike.png" alt="Bike Delivery" />
+          </div>
+          <div class="title">
+            The Fastest<br />
+            <span>Delivery</span><br />
+            In <span>Your City</span>
+          </div>
+          <div class="subTitle">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
+              sed proin amet a vestibulum enim volutpat lacus. Volutpat arcu sit
+              sed tortor etiam volutpat ipsum.
+            </p>
+          </div>
+          <div class="orderBtn">
+            <div class="orderNow">
+              <p>Order Now</p>
+            </div>
+            <div class="orderProcess">
+              <img src="./assets/hero/playBtn.png" alt="Process Order" />
+              <p>Order Process</p>
+            </div>
+          </div>
+        </div>
+        <div class="heroRight">
+          <div class="headerCard">
+            <div class="cardText">
+              <img
+                class="cardImage"
+                src="./assets/hero/burger.png"
+                alt="Burger"
+                style="width: 245px"
+              />
+              <div class="foodDes">
+                <h3>Burger</h3>
+                <p>Mushroom Sauce</p>
+                <h4><span>$</span>5.15</h4>
+              </div>
+            </div>
+          </div>
+          <div class="headerCard">
+            <div class="cardText">
+              <img
+                class="cardImage"
+                src="./assets/hero/burgerCombo.png"
+                alt="Burger Combo"
+              />
+              <div class="foodDes">
+                <h3>Food Combo</h3>
+                <p>Mushroom Sauce</p>
+                <h4><span>$</span>9.35</h4>
+              </div>
+            </div>
+          </div>
+          <div class="headerCard">
+            <div class="cardText">
+              <img
+                class="cardImage"
+                src="./assets/hero/pizza.png"
+                alt="Pizza"
+              />
+              <div class="foodDes">
+                <h3>Pizza</h3>
+                <p>Mushroom Sauce</p>
+                <h4><span>$</span>6.40</h4>
+              </div>
+            </div>
+          </div>
+          <div class="headerCard">
+            <div class="cardText">
+              <img class="cardImage" src="./assets/hero/cake.png" alt="Cake" />
+              <div class="foodDes">
+                <h3>Cake</h3>
+                <p>Mushroom Sauce</p>
+                <h4><span>$</span>5.24</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="heroArrow">
+          <img src="./assets/hero/abstractArrow.png" alt="" />
+        </div>
+      </section>
+      <section class="shortList">
+        <div class="barTime">
+          <img src="./assets/hero/clockIcon.png" alt="Timings" />
+          <h4>Today 10:00am - 10:00pm</h4>
+          <p>Working time</p>
+        </div>
+        <div class="barLocation">
+          <img src="./assets/hero/locationIcon.png" alt="Timings" />
+          <h4>Mohammadpur, Dhaka</h4>
+          <p>Our Location</p>
+        </div>
+        <div class="barNumber">
+          <img src="./assets/hero/clockIcon.png" alt="Timings" />
+          <h4>+88 017 0000 0000</h4>
+          <p>Phone Number</p>
+        </div>
+      </section>
+      <section class="products-section">
+        <h4 class="section-title">Product</h4>
+        <h2 class="section-title2">Most Popular Items</h2>
+        <div class="product-cards" id="product-cards">
+          <!-- First 6 product cards -->
+          <div class="card">
+            <!-- Card 1 -->
+            <div class="prodImg">
+              <img
+                src="./assets/product/gyroSandwich.jpg"
+                alt="Gyro Sandwhich"
+              />
+            </div>
+            <div class="prodText">
+              <h3>Gyro Sandwhic</h3>
+              <p class="price">$15.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- Card 2 -->
+            <div class="prodImg">
+              <img src="./assets/product/enchilade.jpg" alt="Enchilade" />
+            </div>
+            <div class="prodText">
+              <h3>Enchilade</h3>
+              <p class="price">$25.50</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- Card 3 -->
+            <div class="prodImg">
+              <img src="./assets/product/greenBeans.png" alt="Green Beans" />
+            </div>
+            <div class="prodText">
+              <h3>Green Beans</h3>
+              <p class="price">$12.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- Card 4 -->
+            <div class="prodImg">
+              <img src="./assets/product/pizza.jpg" alt="Pizza" />
+            </div>
+            <div class="prodText">
+              <h3>Pizza</h3>
+              <p class="price">$18.50</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- Card 5 -->
+            <div class="prodImg">
+              <img
+                src="./assets/product/chickenPotPie.png"
+                alt="Chicken Pot Pie"
+              />
+            </div>
+            <div class="prodText">
+              <h3>Chicken Pot Pie</h3>
+              <p class="price">$25.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <!-- Card 6 -->
+            <div class="prodImg">
+              <img src="./assets/product/greenSalad.jpg" alt="Green Salad" />
+            </div>
+            <div class="prodText">
+              <h3>Green Salad</h3>
+              <p class="price">$15.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <!-- Hidden cards for "See More" functionality -->
+          <div class="card hidden">
+            <!-- Card 1 -->
+            <div class="prodImg">
+              <img src="./assets/product/pancake.jpg" alt="Pancake" />
+            </div>
+            <div class="prodText">
+              <h3>Gyro Sandwhic</h3>
+              <p class="price">$15.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card hidden">
+            <!-- Card 2 -->
+            <div class="prodImg">
+              <img src="./assets/product/fishSalad.jpg" alt="Fish Salad" />
+            </div>
+            <div class="prodText">
+              <h3>Enchilade</h3>
+              <p class="price">$25.50</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card hidden">
+            <!-- Card 3 -->
+            <div class="prodImg">
+              <img src="./assets/product/pasta.jpg" alt="Pasta" />
+            </div>
+            <div class="prodText">
+              <h3>Green Beans</h3>
+              <p class="price">$12.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card hidden">
+            <!-- Card 4 -->
+            <div class="prodImg">
+              <img src="./assets/product/dessert.jpg" alt="Dessert" />
+            </div>
+            <div class="prodText">
+              <h3>Pizza</h3>
+              <p class="price">$18.50</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card hidden">
+            <!-- Card 5 -->
+            <div class="prodImg">
+              <img
+                src="./assets/product/vegetableSalad.jpg"
+                alt="Vegetable Salad"
+              />
+            </div>
+            <div class="prodText">
+              <h3>Chicken Pot Pie</h3>
+              <p class="price">$25.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+          <div class="card hidden">
+            <!-- Card 6 -->
+            <div class="prodImg">
+              <img src="./assets/product/soup.jpg" alt="Soup" />
+            </div>
+            <div class="prodText">
+              <h3>Green Salad</h3>
+              <p class="price">$15.00</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <button id="toggle-button" class="toggle-button">
+          <p id="see-more-less">See More Products</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </section>
+      <section class="services">
+        <h4 class="section-title">Services</h4>
+        <h2 class="section-title2">Why Choose Our Favorite Food</h2>
+        <div class="service-cards" id="service-cards">
+          <div class="serviceCard">
+            <img src="./assets/service/quality.png" />
+            <h4 class="serviceName">Qualityful</h4>
+            <p class="serviceDetail">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasur and prasising pain was bron.
+            </p>
+          </div>
+          <div class="serviceCard">
+            <img src="./assets/service/healthy.png" />
+            <h4 class="serviceName">Healthy</h4>
+            <p class="serviceDetail">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasur and prasising pain was bron.
+            </p>
+          </div>
+          <div class="serviceCard">
+            <img src="./assets/service/delivery.png" />
+            <h4 class="serviceName">Fast Delivery</h4>
+            <p class="serviceDetail">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasur and prasising pain was bron.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h4 class="section-title">Services</h4>
+        <h2 class="section-title2">Why Choose Our Favorite Food</h2>
+        <div
+          class="testimonial-section-container"
+          id="testimonial-section-container"
+        >
+          <div class="testimonial-review-container">
+            <div class="testimonial-btn-prev testimonial-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="testimonial-btn-next testimonial-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="testimonial-review-wrapper">
+              <div class="testimonial-review">
+                <div class="reviewer">
+                  <img src="./assets/testimonial/person-1.png" />
+                  <div class="personInfo">
+                    <h4>Willians Jhone</h4>
+                    <p>CEO & Co-Founder</p>
+                  </div>
+                </div>
+                <div class="reviewText">
+                  <p>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Amet nisl tincidunt adipiscing dictumst blandit hac. Lectus
+                    cras velit sed dignissim ac, aliquet. Metus egestas habitant
+                    feugiat neque ultrices nunc, dolor egestas mus.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-image">
+            <img src="./assets/testimonial/food.png" alt="Burger and Fries" />
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subImg">
+          <img src="./assets/subscribe/burger.png" />
+        </div>
+        <div class="subText">
+          <div class="subHeader">Subscribe To Our Newsletter</div>
+          <div class="subDet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+            mauris sem sed urna venenatis vivamus. Egestas in velit nulla
+            viverra turpis id ac. Amet faucibus tempus.
+          </div>
+          <div class="subInput" id="subscribeForm">
+            <label for="subEmail"></label>
+            <input
+              type="email"
+              name="subEmail"
+              id="subEmail"
+              placeholder="Type Your Email..."
+            />
+            <button type="submit" id="subBtn">SUBSCRIBE</button>
+          </div>
+          <div id="subMessage" class="subMessage"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="companyDetails">
+        <div class="footerLogo">
+          <img src="./assets/footer/footerLogo.png" alt="Foodie" />
+        </div>
+        <div class="companybrief">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+          libero viverra dapibus odio sit malesuada in quis. Arcu tristique
+          elementum viverra integer id.
+        </div>
+        <div class="companySocials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="openings">
+        <h2>Opening Restaurant</h2>
+        <div class="openingsDetail">
+          <p class="time">Sat-Wed: 09:00am-10:00PM</p>
+          <p class="time">Thursday: 09:00am-11:00PM</p>
+          <p class="time">Friday: 09:00am-8:00PM</p>
+        </div>
+      </div>
+      <div class="userLinks">
+        <h2>User Links</h2>
+        <div class="userLinksDetail">
+          <a href="#" class="link">About Us</a>
+          <a href="#" class="link">Contact Us</a>
+          <a href="#" class="link">Order Delivery</a>
+          <a href="#" class="link">Payment & Tax</a>
+          <a href="#" class="link">Terms of Services</a>
+        </div>
+      </div>
+      <div class="contactUs">
+        <h2>Contact Us</h2>
+        <div class="userLinksDetail">
+          <p class="address">Mohammadpur, Dhaka</p>
+          <p class="address">+88 017 0000 0000</p>
+          <p class="address">+88 018 0000 0000</p>
+          <div class="footerInput">
+            <label for="email"></label>
+            <input
+              class="footerEmail"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email...."
+            />
+            <a href="#"
+              ><img src="./assets/footer/rightArrow.png" alt="Submit"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
